@@ -2,7 +2,7 @@
   "name": "crypto-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ricardo-we.github.io/crypto-app", 
+  "homepage": "https://ricardo-we.github.io/crypto-app/", 
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
