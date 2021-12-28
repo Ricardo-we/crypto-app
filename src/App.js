@@ -1,5 +1,4 @@
 import 'bootswatch/dist/cyborg/bootstrap.min.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainApp from './views/main-app';
 
 function App() {

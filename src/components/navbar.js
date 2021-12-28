@@ -1,5 +1,4 @@
 import { Navbar, Nav, Button, Container, InputGroup, FormControl } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { searchSimilars } from "../utils/get-api-data";
 
@@ -24,16 +23,12 @@ function NavBar({ allCryptos }) {
 	return (
 		<Navbar bg="secondary" expand="lg">
 			<Container>
-				<Link to="/" className="navbar-brand" style={{fontSize: "25px"}}>
+				<a href="#" className="navbar-brand" style={{fontSize: "25px"}}>
 					Crypto-currency
-				</Link>
+				</a >
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="me-auto">
-						<Link to="/" className="nav-link" style={{fontSize: "20px"}}>
-							Home
-						</Link>
-					</Nav>
+					
 					<Nav className="ms-auto">
 						<form className="d-flex">
 							<input 
