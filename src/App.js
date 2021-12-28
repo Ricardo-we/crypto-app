@@ -4,11 +4,7 @@ import MainApp from './views/main-app';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainApp/>}/>
-      </Routes>
-    </BrowserRouter>
+    <MainApp/>
   );
 }
 
