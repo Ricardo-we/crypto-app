@@ -40,7 +40,7 @@ function MainApp() {
                     )
                 })}
 
-                <h3 className='d-none' id="not-found-modal">NOT FOUND</h3>
+                <h4 className='d-none' id="not-found-modal">Not found that crypto</h4>
             </div>
         </div>
     );
