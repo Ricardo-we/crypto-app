@@ -8,9 +8,9 @@ function NavBar({ allCryptos }) {
 	const showOnlySimilars = (e) => {
 		e.preventDefault();
 		let searchResults = searchSimilars(searchValue, allCryptos);
-		let founded = allCryptos.forEach(id => document.getElementById(id).classList.add('d-none'))
-		console.log(founded)
-		if (founded === undefined) document.getElementById('not-found-modal').classList.remove('d-none')
+		console.log(searchResults)
+		allCryptos.forEach(id => document.getElementById(id).classList.add('d-none'))
+		if (searchResults.length < 1 && searchValue !== '') document.getElementById('not-found-modal').classList.remove('d-none')
 		else document.getElementById('not-found-modal').classList.add('d-none')
 		searchResults.forEach(item => document.getElementById(item).classList.remove('d-none'))
 	}
@@ -39,7 +39,10 @@ function NavBar({ allCryptos }) {
 								aria-label="Search"
 								onChange={(e) => {
 									setSearchValue(e.target.value)
-									if(searchValue === '') showAllCryptos();
+									if(searchValue === '') {
+										showAllCryptos();
+										document.getElementById('not-found-modal').classList.remove('d-none')
+									}
 								}}
 							/>
 							<button className="btn btn-outline-primary" type="submit" 
