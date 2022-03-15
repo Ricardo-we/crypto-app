@@ -1,5 +1,5 @@
 import 'bootswatch/dist/cyborg/bootstrap.min.css'
-import MainApp from './views/main-app';
+import MainApp from './views/MainApp';
 
 function App() {
   return (

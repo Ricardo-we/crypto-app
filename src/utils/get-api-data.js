@@ -23,6 +23,12 @@ export default function searchData(search, allData){
     return moreSimilar, similars;
 }
 
+export async function getAllCryptos(){
+    const response = await fetch(APIURL);
+    const cryptosData = await response.json();
+    return await cryptosData;
+}
+
 export function searchSimilars(search, allData){
     const minimumSimilarity = 2;
     const similarItems = [];

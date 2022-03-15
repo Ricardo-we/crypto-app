@@ -1,0 +1,14 @@
+.details-container {
+    flex-direction: "column";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 0;
+    text-overflow: clip;
+    overflow-y: hidden;
+    transition: 500ms;
+}
+
+.details-container-open{
+    height: 206px
+}
